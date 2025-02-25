@@ -163,3 +163,21 @@ body{
 .answer.active{
     display: block;
 }
+
+@media(max-width:800px){
+    .container{
+        width:60vw;
+    }
+}
+
+@media(max-width:600px){
+    .container{
+        width:80vw;
+    }
+}
+
+@media(max-width:300px){
+    .container{
+        width:90vw;
+    }
+}

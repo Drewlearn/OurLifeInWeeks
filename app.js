@@ -40,7 +40,15 @@ calcBtn.addEventListener('click', function(){
     let remainingYears= 90 - age;
     let remainingWeeks = remainingYears * 52;
 
-    result.innerHTML = remainingWeeks;
+    result.innerHTML = numberWithCommas(remainingWeeks);
     ageInput.value = "";
   }
+});
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
+resetBtn.addEventListener('click', function(){
+  refresh.click();
 })
